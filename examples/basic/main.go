@@ -103,10 +103,10 @@ func proc(_ context.Context) error {
 	// 別のビットベクタとの演算
 	//
 	var (
-		bv2   = NewBitVector(bitSize)
-		bvAnd *BitVector
-		bvOr  *BitVector
-		bvXor *BitVector
+		bv2   = bitvector.New(bitSize)
+		bvAnd *bitvector.BitVector
+		bvOr  *bitvector.BitVector
+		bvXor *bitvector.BitVector
 	)
 
 	for _, i := range []int{2, 23, 24} {

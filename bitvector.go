@@ -83,7 +83,7 @@ func (me *BitVector) calc(other *BitVector, op opcode) (*BitVector, error) {
 	}
 
 	var (
-		result  = NewBitVector(me.size)
+		result  = New(me.size)
 		arySize = (me.size + 31) / 32
 	)
 	for i := range arySize {
